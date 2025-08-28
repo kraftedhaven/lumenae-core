@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lumora OAuth Callback</title>
+</head>
+<body>
+  <h1>Lumora OAuth Callback</h1>
+  <p>If you see this page, eBay has redirected your OAuth request successfully.</p>
+  <p>Next step: exchange the authorization code for a user token.</p>
+  <p>Query parameters received:</p>
+  <pre id="query"></pre>
+
+  <script>
+    // Display query parameters (e.g., ?code=AUTH_CODE)
+    document.getElementById('query').textContent = window.location.search;
+  </script>
+</body>
+</html>
